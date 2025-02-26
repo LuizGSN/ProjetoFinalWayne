@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indústrias Wayne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Indústrias Wayne</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="login-container">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Usuário">
+                <input type="password" id="password" placeholder="Senha">
+                <button onclick="login()">Entrar</button>
+                <p id="error-msg" class="error"></p>
+                <p>Não tem uma conta? <a href="#" onclick="showRegister()">Cadastre-se</a></p>
+            </div>
+            <div class="register-container" style="display:none;">
+                <h2>Cadastro</h2>
+                <input type="text" id="new-username" placeholder="Novo Usuário">
+                <input type="password" id="new-password" placeholder="Nova Senha">
+                <button onclick="register()">Cadastrar</button>
+                <p>Já tem uma conta? <a href="#" onclick="showLogin()">Faça login</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Indústrias Wayne</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Segurança</h1>
+        <button id="logout-btn">Sair</button>
+    </header>
+    <main>
+        <div class="container">
+            <section class="dashboard">
+                <h2>Visão Geral</h2>
+                <p>Aqui você pode visualizar os recursos e atividades de segurança.</p>
+                <div class="dashboard-grid">
+                    <div class="dashboard-item">
+                        <h3>Total de Recursos</h3>
+                        <p id="total-recursos">15</p>
+                    </div>
+                    <div class="dashboard-item">
+                        <h3>Alertas de Segurança</h3>
+                        <p id="alertas">3</p>
+                    </div>
+                    <div class="dashboard-item">
+                        <h3>Última Atividade</h3>
+                        <p id="ultima-atividade">Entrada na área restrita</p>
+                    </div>
+                    <div class="dashboard-item">
+                        <h3>Usuários Online</h3>
+                        <p id="usuarios-online">5</p>
+                    </div>
+                </div>
+                <canvas id="securityChart"></canvas>
+                <br><br><br>
+                <button class="btngerenciar" onclick="location.href='gerenciamento.html'">Gerenciar Recursos</button>
+            </section>
+        </div>
+    </main>
+    <script src="./script.js"> </script>
+</body>
+</html>
